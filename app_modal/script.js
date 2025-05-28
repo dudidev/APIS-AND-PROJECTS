@@ -78,6 +78,9 @@ async function sendToGemini() {
             const modal = document.getElementById("customModal");
             modal.style.display = "none";
         }
+        
+        //Cerra el modal con el botón de cerrar
+        document.getElementById("closeBtn").addEventListener("click", closeModal);
 
         // Cerrar el modal al hacer click fuera de él
         window.addEventListener("click", function (event) {
